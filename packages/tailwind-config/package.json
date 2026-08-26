@@ -1,0 +1,10 @@
+{
+  "name": "@gugu-khazi/tailwind-config",
+  "version": "0.0.0",
+  "private": true,
+  "main": "index.ts",
+  "types": "index.ts",
+  "devDependencies": {
+    "tailwindcss": "^4"
+  }
+}

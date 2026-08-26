@@ -1,0 +1,10 @@
+{
+  "extends": "@gugu-khazi/tsconfig/base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@gugu-khazi/tailwind-config": ["../tailwind-config"]
+    }
+  },
+  "include": ["src"]
+}

@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Monorepo — Thapelo Jonas & Gugu Khazi Websites
+
+A Next.js monorepo powering two personal brand websites:
+
+1. **Thapelo Jonas** (`apps/thapelo-jonas`) — Coach TJ: Life Coach, Speaker, Author, Property Investor, Pastor
+2. **Gugu Khazi** (`apps/gugu-khazi`) — Career Coach, Author & International Speaker
+
+Built in **2026**.
+
+## Structure
+
+```
+.
+├── apps/
+│   ├── thapelo-jonas/       # Coach TJ website (preserved as-is)
+│   └── gugu-khazi/          # Gugu Khazi website
+├── packages/
+│   ├── tsconfig/            # Shared TypeScript configs
+│   ├── tailwind-config/     # Shared Tailwind configuration
+│   └── ui/                  # Shared UI components
+├── package.json
+├── pnpm-workspace.yaml
+└── turbo.json
+```
+
+## Tech Stack
+
+- **Framework**: Next.js 16 + React 19
+- **Styling**: Tailwind CSS v4
+- **Package Manager**: pnpm 11.18.0
+- **Monorepo**: Turborepo
+- **Language**: TypeScript
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+# Install dependencies for all workspaces
+pnpm install
+
+# Run both dev servers
 pnpm dev
-# or
-bun dev
+
+# Build both apps for production
+pnpm build
+
+# Run a specific app
+cd apps/thapelo-jonas && pnpm dev
+cd apps/gugu-khazi && pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## About Thapelo Jonas (Coach TJ)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Internationally certified life coach, speaker, author of *Made to Win*, property investor, and pastor based in Bloemfontein, South Africa. Empowering people to prosper in life, business, and finances.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Website**: thapelojonas.com
+- **Book**: Made to Win — 9 Irrefutable Laws to Win the Money Game
+- **Radio**: Monate Breakfast Show, Lesedi FM
 
-## Learn More
+## About Gugu Khazi
 
-To learn more about Next.js, take a look at the following resources:
+Author, talent consultant, career coach, and international speaker specialising in personal career management and leadership development. With over 20 years of senior HR leadership experience across South Africa, Europe, and the Middle East.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Books
+- **Passion to Careers**: Nine steps to building a successful career from your passion
+- **Master Your Career**: Navigating the 12 Stages of Your Fulfilling Career
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## License
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+All rights reserved.
