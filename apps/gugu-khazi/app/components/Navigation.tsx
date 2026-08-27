@@ -8,7 +8,7 @@ const navLinks = [
   { href: "/about", label: "About" },
   { href: "/#services", label: "Services" },
   { href: "/#books", label: "Books" },
-  { href: "/#contact", label: "Contact" },
+  { href: "/contact", label: "Contact" },
 ];
 
 export default function Navigation() {
@@ -38,13 +38,11 @@ export default function Navigation() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <a href="/" className="flex items-center gap-2.5 group">
-            <div className="w-9 h-9 rounded-full bg-accent text-white flex items-center justify-center font-bold text-sm tracking-tight group-hover:scale-110 transition-transform duration-300">
-              GK
-            </div>
-            <span className="font-semibold text-[15px] tracking-tight text-foreground">
+          <a href="/" className="flex items-center group">
+            <h2 className="text-lg sm:text-xl font-bold tracking-wider uppercase text-foreground">
               Gugu Khazi
-            </span>
+              <span className="inline-block align-middle ml-0.5 h-1.5 w-1.5 sm:h-2 sm:w-2 rounded-full bg-accent" />
+            </h2>
           </a>
 
           {/* Desktop Navigation — centered with underline hover */}

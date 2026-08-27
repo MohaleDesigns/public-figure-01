@@ -1,6 +1,7 @@
 "use client";
 
 import { Play, ExternalLink } from "lucide-react";
+import Image from "next/image";
 
 function YoutubeIcon({ size = 24, className = "" }: { size?: number; className?: string }) {
   return (
@@ -115,12 +116,16 @@ export default function Media() {
                 className="group block rounded-2xl overflow-hidden bg-surface-light border border-gold/10 gold-border-hover card-glow"
               >
                 {/* Thumbnail */}
-                <div className="relative aspect-video bg-gradient-to-br from-surface to-surface-light flex items-center justify-center overflow-hidden">
-                  <img
+                <div className="relative aspect-video bg-linear-to-br from-surface to-surface-light flex items-center justify-center overflow-hidden">
+                  <Image
                     src={`https://img.youtube.com/vi/${video.id}/mqdefault.jpg`}
                     alt={video.title}
-                    className="w-full h-full object-cover"
+                    width={100}
+                    height={100}
+                    className="object-cover"
                   />
+
+
                   {/* Play overlay */}
                   <div className="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity">
                     <div className="w-14 h-14 rounded-full bg-gold flex items-center justify-center">

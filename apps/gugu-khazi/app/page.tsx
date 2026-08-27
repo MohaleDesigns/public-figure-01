@@ -6,6 +6,8 @@ import Books from "./sections/Books";
 import About from "./sections/About";
 import Testimonials from "./sections/Testimonials";
 import Contact from "./sections/Contact";
+import CTA from "./components/cta";
+import Partners from "./components/partners";
 
 export default function Home() {
   return (
@@ -13,11 +15,12 @@ export default function Home() {
       <Navigation />
       <main className="flex-1">
         <Hero />
+        <Partners />
         <Services />
         <Books />
         <About />
+        <CTA />
         <Testimonials />
-        <Contact />
       </main>
       <Footer />
     </div>

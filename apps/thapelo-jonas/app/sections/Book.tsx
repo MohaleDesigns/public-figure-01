@@ -1,37 +1,25 @@
 "use client";
 
-import { Star, ShoppingCart } from "lucide-react";
-
-const reviews = [
-  {
-    text: "This book changed how I see money. Thapelo doesn't just talk theory — he gives you laws you can apply immediately.",
-    author: "Reader Review",
-  },
-  {
-    text: "Made to Win is not a feel-good book. It's a manual for anyone serious about building real wealth.",
-    author: "Verified Purchase",
-  },
-  {
-    text: "I bought this for my son and ended up reading it myself. Now the whole family talks about money differently.",
-    author: "Parent & Entrepreneur",
-  },
-];
+import { ShoppingCart } from "lucide-react";
+import Image from "next/image";
 
 export default function Book() {
   return (
     <section id="book" className="relative py-24 lg:py-32 overflow-hidden">
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center_right,_rgba(212,175,55,0.08),_transparent_60%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center_right,rgba(212,175,55,0.08),transparent_60%)]" />
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Book Visual */}
           <div className="relative flex justify-center lg:justify-start order-2 lg:order-1">
-            <div className="absolute -inset-8 bg-gradient-to-br from-gold/10 to-transparent rounded-full blur-3xl" />
+            <div className="absolute -inset-8 bg-linear-to-br from-gold/10 to-transparent rounded-full blur-3xl" />
             <div className="relative">
-              <img
+              <Image
                 src="/book.png"
                 alt="book"
-                className="w-[80%] h-full object-cover grayscale opacity-80 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500 rounded-xl mx-auto"
+                width={80}
+                height={100}
+                className="object-cover grayscale opacity-80 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500 rounded-xl mx-auto"
               />
 
               {/* Floating elements */}
@@ -56,18 +44,18 @@ export default function Book() {
 
           {/* Book Info */}
           <div className="space-y-8 order-1 lg:order-2">
-        <div className="mb-12">
-          <span className="inline-block px-4 py-1.5 rounded-full bg-gold/10 border border-gold/20 text-gold-light text-sm font-medium mb-4">
-            My Book
-          </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-6">
-            Made to{" "}
-            <span className="gold-gradient-text">Win</span>
-          </h2>
-          <p className="text-xl text-muted leading-relaxed">
-            9 Irrefutable Laws to Win the Money Game
-          </p>
-        </div>
+            <div className="mb-12">
+              <span className="inline-block px-4 py-1.5 rounded-full bg-gold/10 border border-gold/20 text-gold-light text-sm font-medium mb-4">
+                My Book
+              </span>
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-6">
+                Made to{" "}
+                <span className="gold-gradient-text">Win</span>
+              </h2>
+              <p className="text-xl text-muted leading-relaxed">
+                9 Irrefutable Laws to Win the Money Game
+              </p>
+            </div>
 
             <div className="space-y-4 text-muted leading-relaxed">
               <p>

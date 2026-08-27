@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 const testimonials = [
   {
     name: "Nelson Mandela",
@@ -54,14 +56,16 @@ export default function Testimonials() {
               className="group flex flex-col bg-white shadow-lg overflow-hidden rounded-md"
             >
               {/* Image + Quote Area */}
-              <div className="relative aspect-[4/5] overflow-hidden bg-[#1a1a1a]">
-                <img
+              <div className="relative aspect-4/5 overflow-hidden bg-[#1a1a1a]">
+                <Image
                   src={t.image}
                   alt={t.name}
-                  className="w-full h-full object-cover grayscale opacity-80 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500"
+                  width={100}
+                  height={100}
+                  className="object-cover grayscale opacity-80 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500"
                 />
                 {/* Quote overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+                <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-5">
                   <p className="text-white text-sm italic leading-relaxed">
                     &ldquo;{t.text}&rdquo;

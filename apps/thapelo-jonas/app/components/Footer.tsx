@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import SocialLinks from "./SocialLinks";
 
 export default function Footer() {
@@ -10,8 +11,14 @@ export default function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-gold to-gold-dark flex items-center justify-center text-background font-bold text-xl">
-                TJ
+              <div className="w-12 h-12 rounded-lg flex items-center justify-center text-background font-bold text-xl overflow-hidden">
+                <Image
+                  src="/images/logo.png"
+                  alt="logo"
+                  width={100}
+                  height={100}
+                  className="object-cover"
+                />
               </div>
               <div>
                 <h3 className="font-semibold text-lg">Thapelo Jonas</h3>
