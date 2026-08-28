@@ -30,12 +30,12 @@ const testimonials = [
 export default function Testimonials() {
   return (
     <section id="testimonials" className="relative py-24 lg:py-32">
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-surface-cream/40 to-transparent" />
+      <div className="absolute inset-0 bg-linear-to-b from-transparent via-surface-cream/40 to-transparent" />
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-5">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight animate-fade-in-up animate-delay-1 mb-2">
             Lives <span className="accent-gradient-text">Transformed</span>
           </h2>
           <p className="text-base text-muted leading-relaxed">

@@ -5,12 +5,12 @@ import { Mail, MapPin, Phone, Send, Clock, Calendar } from "lucide-react";
 export default function Contact() {
   return (
     <section id="contact" className="relative py-24 lg:py-32">
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-surface-cream/50 to-background" />
+      <div className="absolute inset-0 bg-linear-to-b from-background via-surface-cream/50 to-background" />
 
       <div className="relative mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-5">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight animate-fade-in-up animate-delay-1 mb-2">
             Let's Build Your{" "}
             <span className="accent-gradient-text">Dream Career</span>
           </h2>
@@ -20,14 +20,14 @@ export default function Contact() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-5 gap-10">
+        <div className="grid lg:grid-cols-5 gap-6">
           {/* Contact Info — sidebar style, different from TJ's grid */}
           <div className="lg:col-span-2 space-y-6">
             <div className="p-6 rounded-2xl bg-surface border border-border">
               <h3 className="font-semibold text-foreground mb-5">Contact Details</h3>
               <div className="space-y-5">
                 <div className="flex items-start gap-3.5">
-                  <div className="w-9 h-9 rounded-lg bg-accent-soft border border-accent/10 flex items-center justify-center flex-shrink-0">
+                  <div className="w-9 h-9 rounded-lg bg-accent-soft border border-accent/10 flex items-center justify-center shrink-0">
                     <Mail size={16} className="text-accent" />
                   </div>
                   <div>
@@ -37,7 +37,7 @@ export default function Contact() {
                 </div>
 
                 <div className="flex items-start gap-3.5">
-                  <div className="w-9 h-9 rounded-lg bg-accent-soft border border-accent/10 flex items-center justify-center flex-shrink-0">
+                  <div className="w-9 h-9 rounded-lg bg-accent-soft border border-accent/10 flex items-center justify-center shrink-0">
                     <MapPin size={16} className="text-accent" />
                   </div>
                   <div>
@@ -48,7 +48,7 @@ export default function Contact() {
                 </div>
 
                 <div className="flex items-start gap-3.5">
-                  <div className="w-9 h-9 rounded-lg bg-accent-soft border border-accent/10 flex items-center justify-center flex-shrink-0">
+                  <div className="w-9 h-9 rounded-lg bg-accent-soft border border-accent/10 flex items-center justify-center shrink-0">
                     <Phone size={16} className="text-accent" />
                   </div>
                   <div>
@@ -59,7 +59,7 @@ export default function Contact() {
                 </div>
 
                 <div className="flex items-start gap-3.5">
-                  <div className="w-9 h-9 rounded-lg bg-accent-soft border border-accent/10 flex items-center justify-center flex-shrink-0">
+                  <div className="w-9 h-9 rounded-lg bg-accent-soft border border-accent/10 flex items-center justify-center shrink-0">
                     <Clock size={16} className="text-accent" />
                   </div>
                   <div>
@@ -71,7 +71,7 @@ export default function Contact() {
             </div>
 
             {/* Availability card */}
-            <div className="p-6 rounded-2xl bg-gradient-to-br from-accent-soft to-surface-cream border border-accent/10">
+            <div className="p-6 rounded-2xl bg-linear-to-br from-accent-soft to-surface-cream border border-accent/10">
               <div className="flex items-center gap-2 mb-3">
                 <Calendar size={16} className="text-accent" />
                 <h4 className="font-semibold text-foreground text-[15px]">Current Availability</h4>
@@ -88,7 +88,7 @@ export default function Contact() {
 
           {/* Contact Form */}
           <div className="lg:col-span-3">
-            <div className="p-7 sm:p-8 rounded-2xl bg-surface border border-border shadow-sm shadow-black/[0.02]">
+            <div className="p-7 sm:p-8 rounded-2xl bg-surface border border-border shadow-sm shadow-black/2">
               <h3 className="font-semibold text-foreground mb-6">Send a Message</h3>
               <form className="space-y-5" onSubmit={(e) => e.preventDefault()}>
                 <div className="grid sm:grid-cols-2 gap-5">

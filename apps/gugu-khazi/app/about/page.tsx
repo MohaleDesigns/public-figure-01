@@ -13,13 +13,13 @@ export default function AboutPage() {
             className="absolute inset-0 bg-cover bg-center"
             style={{ backgroundImage: "url('/images/banner.png')" }}
           />
-          <div className="absolute inset-0 bg-black/40" />
+          <div className="absolute inset-0 bg-linear-to-r from-black/30 via-black/20 to-transparent" />
           <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="max-w-2xl">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tight mb-4">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground tracking-tight mb-4">
                 About Us
               </h1>
-              <p className="text-lg text-white/80 leading-relaxed">
+              <p className="text-lg text-foreground/70 leading-relaxed">
                 Discover the story, mission, and values behind Gugu Khazi — a global career coach,
                 author, and speaker dedicated to helping you build a career aligned with your passion.
               </p>

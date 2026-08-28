@@ -16,10 +16,10 @@ export default function ContactPage() {
           <div className="absolute inset-0 bg-black/40" />
           <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="max-w-2xl">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tight mb-4">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground tracking-tight mb-2">
                 Contact Us
               </h1>
-              <p className="text-lg text-white/80 leading-relaxed">
+              <p className="text-lg text-foreground/70 leading-relaxed">
                 Ready to take the next step in your career? Get in touch — whether you are looking for
                 coaching, speaking engagements, or corporate consulting, we would love to hear from you.
               </p>

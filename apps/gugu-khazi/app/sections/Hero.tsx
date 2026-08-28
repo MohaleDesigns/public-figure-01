@@ -93,7 +93,7 @@ export default function Hero() {
               </a>
               <a
                 href="/contact"
-                className="group flex items-center gap-2.5 px-8 py-4 border border-border-warm text-foreground text-sm font-bold rounded-full hover:border-accent/30 hover:bg-accent-soft transition-all duration-300"
+                className="group flex items-center gap-2.5 px-8 py-4 bg-border border border-border-warm text-foreground text-sm font-bold rounded-full hover:border-accent/30 hover:bg-accent-soft transition-all duration-300"
               >
                 <Calendar size={18} />
                 Book a Session

@@ -5,7 +5,6 @@ import Services from "./sections/Services";
 import Books from "./sections/Books";
 import About from "./sections/About";
 import Testimonials from "./sections/Testimonials";
-import Contact from "./sections/Contact";
 import CTA from "./components/cta";
 import Partners from "./components/partners";
 

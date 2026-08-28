@@ -86,7 +86,7 @@ export default function Services() {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-20">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-5">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight animate-fade-in-up animate-delay-1 mb-2">
             Your Career,{" "}
             <span className="accent-gradient-text">Mastered</span>
           </h2>

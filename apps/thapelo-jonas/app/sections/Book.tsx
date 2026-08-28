@@ -78,7 +78,7 @@ export default function Book() {
                 ].map((law, i) => (
                   <div key={law} className="inline-block mr-1">
                     <div className="flex items-center gap-1">
-                      <span className="w-6 h-6 rounded-full bg-gold/10 flex items-center justify-center text-xs text-gold-light flex-shrink-0">
+                      <span className="w-6 h-6 rounded-full bg-gold/10 flex items-center justify-center text-xs text-gold-light shrink-0">
                         {i + 1}
                       </span>
                       <span className="inline-block text-[16px] hover:translate-x-1 transition-transform duration-200 cursor-default">

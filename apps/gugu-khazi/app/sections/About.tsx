@@ -55,7 +55,7 @@ export default function About() {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-5">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight animate-fade-in-up animate-delay-1 mb-2">
             The Story Behind{" "}
             <span className="accent-gradient-text">Gugu Khazi</span>
           </h2>
@@ -72,7 +72,7 @@ export default function About() {
             return (
               <div
                 key={item.label}
-                className="group relative h-[340px] rounded-2xl overflow-hidden border border-border hover:border-accent/20 transition-all duration-300 hover:shadow-lg hover:shadow-black/5"
+                className="group relative h-85 rounded-2xl overflow-hidden border border-border hover:border-accent/20 transition-all duration-300 hover:shadow-lg hover:shadow-black/5"
               >
                 {/* Background image */}
                 <div

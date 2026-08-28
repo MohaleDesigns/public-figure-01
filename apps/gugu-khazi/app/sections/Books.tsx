@@ -1,6 +1,6 @@
 "use client";
 
-import { ShoppingCart, ArrowRight, BookOpen } from "lucide-react";
+import { ShoppingCart, ArrowRight } from "lucide-react";
 import Image from "next/image";
 
 const books = [
@@ -36,11 +36,7 @@ export default function Books() {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent-soft border border-accent/10 mb-6">
-            <BookOpen size={16} className="text-accent" />
-            <span className="text-sm font-semibold text-accent">Published Works</span>
-          </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-5">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight animate-fade-in-up animate-delay-1 mb-2">
             Knowledge That{" "}
             <span className="accent-gradient-text">Transforms</span>
           </h2>
@@ -62,7 +58,7 @@ export default function Books() {
               >
                 {/* Image */}
                 <div className={`relative ${isReversed ? "lg:order-2" : "lg:order-1"}`}>
-                  <div className="relative aspect-1/1 rounded-2xl overflow-hidden shadow-xl shadow-black/5 border border-border group">
+                  <div className="relative aspect-square rounded-2xl overflow-hidden shadow-xl shadow-black/5 border border-border group">
                     <Image
                       src={book.image}
                       alt={book.imageAlt}

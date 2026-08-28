@@ -41,7 +41,7 @@ export default function Footer() {
                 className="text-[13px] font-medium text-muted hover:text-accent transition-colors relative group"
               >
                 {link.label}
-                <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-accent group-hover:w-full transition-all duration-300 rounded-full" />
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent group-hover:w-full transition-all duration-300 rounded-full" />
               </a>
             ))}
           </div>
