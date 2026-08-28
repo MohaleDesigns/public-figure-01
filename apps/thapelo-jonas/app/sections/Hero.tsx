@@ -7,7 +7,7 @@ export default function Hero() {
     <section
       id="home"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
-      style={{ backgroundImage: "url('/banner-image.png')", backgroundSize: "cover", backgroundPosition: "center" }}
+      style={{ backgroundImage: "url('/images/banner-image.png')", backgroundSize: "cover", backgroundPosition: "center" }}
     >
       {/* Dark overlay for readability */}
       <div className="absolute inset-0 bg-black/60" />

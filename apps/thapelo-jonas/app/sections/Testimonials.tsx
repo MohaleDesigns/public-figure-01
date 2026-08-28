@@ -7,25 +7,25 @@ const testimonials = [
     name: "Nelson Mandela",
     role: "Former President of South Africa",
     text: "Coach TJ is one of the best speakers we have in South African.",
-    image: "/president-nelson.jpg",
+    image: "/images/testimonials/nelson-mandela.png",
   },
   {
     name: "Thuso Motaung",
     role: "Radio presenter & Pastor",
     text: "It was a pleasure to work with Coach TJ, great guy.",
-    image: "/testimonials/thuso-motaung.png",
+    image: "/images/testimonials/thuso-motaung.png",
   },
   {
     name: "Witness Mdaka",
     role: "Founder of AdPro",
     text: "Coach TJ is a rockstar when it comes to public speaking.",
-    image: "/testimonials/witness-mdaka.png",
+    image: "/images/testimonials/witness-mdaka.png",
   },
   {
     name: "DJ Sbu",
     role: "Founder of MoFaya",
     text: "I have shared a stage with him and I enjoyed his humour.",
-    image: "/testimonials/dj-sbu.png",
+    image: "/images/testimonials/dj-sbu.png",
   },
 ];
 
@@ -60,9 +60,9 @@ export default function Testimonials() {
                 <Image
                   src={t.image}
                   alt={t.name}
-                  width={100}
-                  height={100}
-                  className="object-cover grayscale opacity-80 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500"
+                  fill
+                  sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
+                  className="object-cover object-top grayscale opacity-80 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500"
                 />
                 {/* Quote overlay */}
                 <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent" />

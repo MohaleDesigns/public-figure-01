@@ -13,13 +13,15 @@ export default function Book() {
           {/* Book Visual */}
           <div className="relative flex justify-center lg:justify-start order-2 lg:order-1">
             <div className="absolute -inset-8 bg-linear-to-br from-gold/10 to-transparent rounded-full blur-3xl" />
-            <div className="relative">
+            <div className="relative w-full max-w-xs sm:max-w-sm">
               <Image
-                src="/book.png"
-                alt="book"
-                width={80}
-                height={100}
-                className="object-cover grayscale opacity-80 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500 rounded-xl mx-auto"
+                src="/images/book/book.png"
+                alt="Made to Win book cover"
+                width={1025}
+                height={1280}
+                sizes="(min-width: 640px) 24rem, 20rem"
+                priority
+                className="w-full h-auto rounded-xl shadow-2xl"
               />
 
               {/* Floating elements */}

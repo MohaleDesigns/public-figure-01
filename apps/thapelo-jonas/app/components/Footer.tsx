@@ -14,10 +14,11 @@ export default function Footer() {
               <div className="w-12 h-12 rounded-lg flex items-center justify-center text-background font-bold text-xl overflow-hidden">
                 <Image
                   src="/images/logo.png"
-                  alt="logo"
-                  width={100}
-                  height={100}
-                  className="object-cover"
+                  alt="Thapelo Jonas logo"
+                  width={1254}
+                  height={1254}
+                  sizes="48px"
+                  className="h-full w-full object-contain"
                 />
               </div>
               <div>

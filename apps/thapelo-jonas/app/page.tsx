@@ -20,37 +20,37 @@ export default function Home() {
             {[
               {
                 topLabel: "EDUCATION",
-                image: "/highlights/education.png",
+                image: "/images/highlights/education.png",
                 bottomLabel: "UNIVERSITY OF THE FREE STATE",
                 description: "BCom Honours in Business Management & BCom in Marketing from the University of the Free State.",
               },
               {
                 topLabel: "CORPORATE",
-                image: "/highlights/corparate.png",
+                image: "/images/highlights/corparate.png",
                 bottomLabel: "DIRECTOR",
                 description: "Director at one of South Africa's largest paper merchant companies, with multiple income streams.",
               },
               {
                 topLabel: "MEDIA",
-                image: "/highlights/media.png",
+                image: "/images/highlights/media.png",
                 bottomLabel: "LESEDI FM",
                 description: "Regular contributor to the Monate Breakfast Show on Lesedi FM (SABC), reaching thousands daily.",
               },
               {
                 topLabel: "FITNESS",
-                image: "/highlights/fitness.png",
+                image: "/images/highlights/fitness.png",
                 bottomLabel: "16KG LOST",
                 description: "Shed 16kg in just 3 months in 2018. A passionate fitness enthusiast who walks the talk.",
               },
               {
                 topLabel: "FAMILY",
-                image: "/highlights/family.png",
+                image: "/images/highlights/family.png",
                 bottomLabel: "HUSBAND & FATHER",
                 description: "Devoted husband to Mampoi and proud father to Thapelo Jnr and Tlotliso Jonas.",
               },
               {
                 topLabel: "COMMUNITY",
-                image: "/highlights/community.png",
+                image: "/images/highlights/community.png",
                 bottomLabel: "PASTOR",
                 description: "Pastor and community leader, guiding people in faith, family, and financial freedom.",
               },
@@ -71,9 +71,9 @@ export default function Home() {
                   <Image
                     src={panel.image}
                     alt={panel.topLabel}
-                    width={100}
-                    height={100}
-                    className="object-cover grayscale opacity-80 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500"
+                    fill
+                    sizes="(min-width: 1024px) 17vw, (min-width: 640px) 33vw, 50vw"
+                    className="object-cover object-top grayscale opacity-80 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500"
                   />
                   {/* Gradient overlay + description on hover */}
                   <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />

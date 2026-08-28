@@ -44,10 +44,12 @@ export default function Navigation() {
             <div className="w-10 h-10 rounded-lg bg-linear-to-br from-gold to-gold-dark flex items-center justify-center text-background font-bold text-lg group-hover:scale-110 transition-transform overflow-hidden">
               <Image
                 src="/images/logo.png"
-                alt="logo"
-                width={100}
-                height={100}
-                className="object-cover"
+                alt="Thapelo Jonas logo"
+                width={1254}
+                height={1254}
+                sizes="40px"
+                priority
+                className="h-full w-full object-contain"
               />
             </div>
             <span className="font-semibold text-lg tracking-tight hidden sm:block">
